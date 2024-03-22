@@ -1,6 +1,6 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot)
 
-# Apply adanced GitHib Copilot techniques
+# Apply advanced GitHub Copilot techniques
 
 
 ## Requirements
