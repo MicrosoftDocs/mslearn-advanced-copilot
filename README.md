@@ -1,6 +1,8 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot)
 
 # Apply advanced GitHub Copilot techniques
+Discover new ways to leverage advanced GitHub Copilot techniques within a Python repository to implement an interactive HTML form and an Application Programming Interface (API) endpoint. 
+Gain more practical experience by using this repository that contains a Python Web Application that hosts a Travel Weather API.
 
 
 ## Requirements
@@ -9,16 +11,48 @@
 1. Open [this repository with Codespaces](https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-python)
 
 ## 💪🏽 Exercise
+The current API is not exposing country/{country} which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country, city, and given month.
 
+As with any implementation, this addition should include at least one test function to work with the pytest runner and test framework. 
 
-### 🛠 Step 1: 
+### 🛠 Step 1: Add a new route 
+On our first exercise we will create a new route in our API. Go to the main.py file, and by using the inline chat (`ctrl` + `I`) ask GitHub Copilot to help you create a new API that shows you the cities of a country. This prompt should give you something similar like this:
 
+```python
+# Create a new route that exposes the cities of a country:
+@app.get('/countries/{country}')
+def cities(country: str):
+    return list(data[country].keys())
 
-### 🔎 Step 2: 
+```
+Note: Try your new route and refine your prompt until the result is as desired.
 
+### 🔎 Step 2: Create a test
+Now that you have created a new route, let's create a test with Copilot Chat for this route that uses Spain as the country. Remember to select your code and ask Copilot Chat to help you with this specific API that we just have created.
 
-### 🐍 Step 3: 
+```python
 
+> help me to create a new test for this route that uses Spain as the country.
+
+```
+Once Copilot has helped you to create your test, try it. If this is not functioning as expected, feel free to share those details with Copilot in the chat. For example:
+
+```python
+
+> This test is not quite right, it is not including cities that doesn't exist. Only Seville is part of the API.
+
+```
+
+It should give you another solution. Keep trying until you achieve the desired result.
+
+### 🐍 Step 3: Use an agent to write the project
+During this step we will be using an agent (workspace) to write the project documentation on how to run this project. In the GitHub Copilot Chat, we will try the following prompt:
+
+```python
+
+> @workspace help me to use an agent to write the project documentation on how to run it 
+
+```
 
 Finally, verify the new endpoint is working by trying it out by going to the `/docs` endpoint and confirming that the endpoint shows up.
 
