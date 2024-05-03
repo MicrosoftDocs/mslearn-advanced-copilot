@@ -16,7 +16,12 @@ The current API is not exposing country/{country} which needs to be implemented 
 As with any implementation, this addition should include at least one test function to work with the pytest runner and test framework. 
 
 ### 🛠 Step 1: Add a new route 
-On our first exercise we will create a new route in our API. Go to the main.py file, and by using the inline chat with the following command `ctrl` + `i` (Windows) or  `cmd` + `i`(Mac) ask GitHub Copilot to help you create a new API that shows you the cities of a country. This prompt should give you something similar like this:
+On our first exercise we will create a new route in our API. Go to the main.py file, and by using the inline chat with the following command `ctrl` + `i` (on Windows) or  `cmd` + `i`(on Mac) ask GitHub Copilot to help you create a new API that shows you the cities of a country. 
+
+`> Create a new route that exposes the cities of a country.`
+
+
+This prompt should give you something similar like this:
 
 
 ```python
