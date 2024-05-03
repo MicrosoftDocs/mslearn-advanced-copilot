@@ -30,11 +30,8 @@ Note: Try your new route and refine your prompt until the result is as desired.
 ### 🔎 Step 2: Create a test
 Now that you have created a new route, let's create a test with Copilot Chat for this route that uses Spain as the country. Remember to select your code and ask Copilot Chat to help you with this specific API that we just have created.
 
-```python
+`> /tests help me to create a new test for this route that uses Spain as the country.`
 
-> help me to create a new test for this route that uses Spain as the country.
-
-```
 Once Copilot has helped you to create your test, try it. If this is not functioning as expected, feel free to share those details with Copilot in the chat. For example:
 
 ```python
@@ -48,11 +45,7 @@ It should give you another solution. Keep trying until you achieve the desired r
 ### 🐍 Step 3: Use an agent to write the project
 During this step we will be using an agent (workspace) to write the project documentation on how to run this project. In the GitHub Copilot Chat, we will try the following prompt:
 
-```python
-
-> @workspace help me to use an agent to write the project documentation on how to run it 
-
-```
+`> @workspace help me to use an agent to write the project documentation on how to run it .`
 
 Finally, verify the new endpoint is working by trying it out by going to the `/docs` endpoint and confirming that the endpoint shows up.
 
