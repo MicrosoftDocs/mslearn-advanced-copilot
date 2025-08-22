@@ -4,6 +4,7 @@
 Discover new ways to leverage advanced GitHub Copilot techniques within a Python repository to implement an interactive HTML form and an Application Programming Interface (API) endpoint. 
 Gain more practical experience by using this repository that contains a Python Web Application that hosts a Travel Weather API.
 
+[![Powered by Awesome Copilot](https://img.shields.io/badge/Powered_by-Awesome_Copilot-blue?logo=githubcopilot)](https://aka.ms/awesome-github-copilot)
 
 ## Requirements
 
