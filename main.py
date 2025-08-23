@@ -4,7 +4,6 @@ from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
-
 current_dir = dirname(abspath(__file__))
 wellknown_path = join(current_dir, ".well-known")
 historical_data = join(current_dir, "weather.json")
@@ -39,3 +38,12 @@ def monthly_average(country: str, city: str, month: str):
 openapi_schema = app.openapi()
 with open(join(wellknown_path, "openapi.json"), "w") as f:
     json.dump(openapi_schema, f)
+
+@app.get('/countries/{country}/cities')
+def cities(country: str):
+    """
+    Returns a list of cities for a given country.
+    """
+    if country not in data:
+        return {"error": f"Country '{country}' not found."}
+    return list(data[country].keys())
