@@ -1,5 +1,7 @@
 {
 	"name": "Python 3",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	"workspaceFolder": "/workspace",
 	"forwardPorts": [
 	  8000
 	],
@@ -13,7 +15,7 @@
 	"customizations": {
 	  "codespaces": {
 		"openFiles": [
-		  "main.py",
+		  "main.py"
 		]
 	  },
 	  "vscode": {
